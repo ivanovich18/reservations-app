@@ -1,9 +1,10 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
+require('dotenv').config();
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAHpAc2a4vOd2ntSu0ay6_QMAPAj5mQGso",
+    apiKey: process.env.GOOGLE_API_KEY,
     authDomain: "sugbo-eats.firebaseapp.com",
     projectId: "sugbo-eats",
     storageBucket: "sugbo-eats.appspot.com",
