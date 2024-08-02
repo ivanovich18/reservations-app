@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# Sugbo Eats Web Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Sugbo Eats Web Dashboard is a management tool designed to simplify the process of handling restaurant reservations made through the Sugbo Eats mobile app. Built using ReactJS and Firebase, the dashboard allows administrators to manage reservations efficiently.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Retrieve Reservations**: View a comprehensive list of all reservations made through the mobile app.
+- **Check-In**: Mark reservations as checked-in once customers arrive at the restaurant.
+- **Undo Check-In**: Reverse check-ins if needed.
+- **Delete Reservations**: Remove reservations from the list as necessary.
+- **Real-Time Updates**: Automatically update reservation data using Firebase.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **ReactJS**: The primary library used for building the user interface.
+- **Firebase**: Utilized for data storage and real-time updates.
+- **Material-UI**: A UI component library used for styling the dashboard.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Screenshots
 
-### `npm test`
+![Sugbo Eats Dashboard Screenshot](https://github.com/ivanovich18/sugbo-eats-dashboard/assets/88656474/43529fe0-983d-4f75-a0b0-fc91647cd582)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+To get a local copy up and running, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    git clone https://github.com/ivanovich18/sugbo-eats-dashboard.git
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Navigate to the project directory:**
 
-### `npm run eject`
+    ```bash
+    cd sugbo-eats-dashboard
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Install dependencies:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npm install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Set up Firebase:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   - Create a new project on the [Firebase Console](https://console.firebase.google.com/).
+   - Add a web app to your Firebase project.
+   - Retrieve your Firebase configuration settings from the console.
+   - Create a `.env` file in the root directory and add your Firebase credentials:
 
-## Learn More
+     ```env
+     REACT_APP_FIREBASE_API_KEY=your_api_key
+     REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
+     REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+     REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+     REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+     REACT_APP_FIREBASE_APP_ID=your_app_id
+     ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. **Start the development server:**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    ```bash
+    npm start
+    ```
 
-### Code Splitting
+   - Open [http://localhost:3000](http://localhost:3000) to view the dashboard in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+1. **Retrieve Reservations:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   - Log in to the dashboard to view all current reservations.
 
-### Making a Progressive Web App
+2. **Manage Reservations:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   - Check-in customers, undo check-ins, or delete reservations as needed.
 
-### Advanced Configuration
+## Members
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Ronilo Jose Cabag
+- Miles Dagle
+- Aldrin Felices
+- John Kevin Genon
+- Ivan Suralta
+- Rovic Tecson
 
-### Deployment
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Contributions are welcome! Please follow these steps to contribute:
 
-### `npm run build` fails to minify
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
