@@ -5,12 +5,12 @@ require('dotenv').config();
 
 const firebaseConfig = {
     apiKey: process.env.GOOGLE_API_KEY,
-    authDomain: "sugbo-eats.firebaseapp.com",
-    projectId: "sugbo-eats",
-    storageBucket: "sugbo-eats.appspot.com",
-    messagingSenderId: "184395993549",
-    appId: "1:184395993549:web:25a850839cab37bc147484",
-    measurementId: "G-2TWXGQZXPV"
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID,
+    measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
   };
 
 // Initialize Firebase
