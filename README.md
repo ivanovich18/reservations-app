@@ -14,11 +14,6 @@ The Sugbo Eats Web Dashboard is a management tool designed to simplify the proce
 
 - **ReactJS**: The primary library used for building the user interface.
 - **Firebase**: Utilized for data storage and real-time updates.
-- **Material-UI**: A UI component library used for styling the dashboard.
-
-## Screenshots
-
-![Sugbo Eats Dashboard Screenshot](https://github.com/ivanovich18/sugbo-eats-dashboard/assets/88656474/43529fe0-983d-4f75-a0b0-fc91647cd582)
 
 ## Installation
 
